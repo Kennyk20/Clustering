@@ -4,7 +4,7 @@ function [centroid, dimension_weight, class] = Entropy_Weighting_Subspace_Kmeans
 centroid = zeros(K,size(data,2)); % centroid for each class
 class = zeros(size(data,1),1); % classification result for each observation
 dimension_weight = ones(K,size(data,2)); % weights for each dimension in each class
-
+--
 % Initialization
 n = size(data,1);
 J = 0; % used to record objective function value
